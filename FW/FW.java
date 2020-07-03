@@ -147,7 +147,13 @@ public class FW {
 		
 	}
 	
-	
+	private static int IsNegativeCycle(int[][] mat) {
+		for (int i = 0; i < mat.length; i++) {
+				if (mat[i][i]<0)
+					return i;
+		}
+		return -1;
+	}
 	
 	
 	public static void main(String[] args) {
